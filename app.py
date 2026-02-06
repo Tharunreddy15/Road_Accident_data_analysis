@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # MUST come first
-df = pd.read_csv("data_sample.csv")  # <-- your file name here
+df = pd.read_csv("ACCIDENTDATA_PROJECT_UNIQUE_IMAGES.csv")  # <-- your file name here
 
 st.title("Road Accident Severity Dashboard")
 
