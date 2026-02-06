@@ -1,6 +1,8 @@
-import os
 import streamlit as st
 import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import os
 
 st.write("Current directory:", os.getcwd())
 st.write("Files here:", os.listdir())
