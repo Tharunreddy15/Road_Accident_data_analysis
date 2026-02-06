@@ -6,7 +6,7 @@ st.write("Current directory:", os.getcwd())
 st.write("Files here:", os.listdir())
 
 # MUST come first
-df = pd.read_csv("data_sample.csv")  # <-- your file name here
+df = pd.read_csv("data_sample.zip.csv")  # <-- your file name here
 
 st.title("Road Accident Severity Dashboard")
 
