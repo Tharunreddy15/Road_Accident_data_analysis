@@ -1,7 +1,9 @@
+import os
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
+
+st.write("Current directory:", os.getcwd())
+st.write("Files here:", os.listdir())
 
 # MUST come first
 df = pd.read_csv("data_sample.csv")  # <-- your file name here
