@@ -1,3 +1,23 @@
+import streamlit as st
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# MUST come first
+df = pd.read_csv("data_sample.csv")  # <-- your file name here
+
+st.title("Road Accident Severity Dashboard")
+
+# Now you can safely use df
+severity_counts = df['Severity_Label'].value_counts().reindex(['Slight', 'Severe', 'Fatal'])
+
+fig, ax = plt.subplots()
+sns.barplot(x=severity_counts.index, y=severity_counts.values, ax=ax)
+st.pyplot(fig)
+
+
+
+
 severity_counts = df['Severity_Label'].value_counts().reindex(['Slight', 'Severe', 'Fatal'])
 total = severity_counts.sum()
 percentages = (severity_counts / total) * 100
